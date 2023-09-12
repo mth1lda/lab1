@@ -7,12 +7,69 @@
     tools:context=".MainActivity">
 
     <TextView
+        android:id="@+id/group"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="40dp"
+        android:text="Т-403901-ИСиТ"
+        android:textColor="#C54805"
+        android:textSize="18dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginBottom="30dp"
+        android:text="Даша"
+        android:textColor="#757575"
+        android:textSize="18dp"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btrimg" />
+
+    <ImageView
+        android:id="@+id/hideimg"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="170dp"
+        android:background="#FFFFFF"
+        android:backgroundTint="#89C1E2"
+        android:onClick="hide_img"
+        app:layout_constraintEnd_toEndOf="@+id/btrimg"
+        app:layout_constraintStart_toStartOf="@+id/btrimg"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/inv" />
+
+    <ImageView
+        android:id="@+id/btrimg"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="215dp"
+        android:layout_marginEnd="55dp"
+        android:layout_marginBottom="173dp"
+        app:layout_constraintBottom_toTopOf="@+id/name"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/btr" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="169dp"
+        android:backgroundTint="#1C3589"
+        android:onClick="hide_text"
+        android:text="incognito"
+        android:textColor="#8AC2E3"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
